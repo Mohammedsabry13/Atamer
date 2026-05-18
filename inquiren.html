@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+        integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+        integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/Css/styleen.css">
+    <link rel="icon" href="assets/icons/Group-10103.ico">
+    <title>Atamer</title>
+    <style>
+        @font-face {
+            font-family: somar;
+            src: url(assets/fonts/somar-regular.otf);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- startNavBar -->
+    <nav>
+        <div class="logo-box">
+            <a class="navbar-brand" href="indexen.html">
+                <img src="assets/image/aatamer.png" alt="">
+                <img src="assets/image/Group 10103.png" alt="navbar-toggler-icon">
+            </a>
+        </div>
+        <ul class="navbar-nav mx-auto mb-lg-0" id="menuList">
+            <li class="nav-item">
+                <a class="nav-link  fs-3" aria-current="page" href="indexen.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active fs-3" href="inquiren.html">Applications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-3" href="#">Articles</a>
+            </li>
+            <li class="nav-item">
+                <a class="fs-3">Select language</a>
+                <ul class="dropdown">
+                    <li><a href="inquiren.html">EN <img src="assets/icons/u.png" alt=""></a></li>
+                    <li><a href="inquire.html">AR <img src="assets/icons/r.png" alt=""></a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="rounded-pill buttons-s mb-sm-4 mt-md-4 me-md-3 fs-4"
+                    style="display: flex; justify-content: center;" href="loginen.html">Registration / login</a>
+            </li>
+        </ul>
+        <div class="d-flex menu-icon">
+            <button class="navbar-toggler justify-content-around d-block btn btn-white  " type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-sliders-h navbar-toggler-icon" onclick="toggleMenu()"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- Start-NavBar-Bredcramb -->
+    <div class="container-fluid">
+        <navbar style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="indexen.html"
+                        class="color-1 navbrab text-decoration-none ps-5">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Inquire about your Umrah</li>
+            </ol>
+        </navbar>
+    </div>
+    <!-- End-NavBar-Bredcramb -->
+    <!-- Start-Inquire -->
+    <section>
+        <div class="container">
+            <h1 class="fw-bold fs-1">Inquire about your Umrah</h1>
+            <form>
+                <div class="container">
+                    <div class="row mb-3 my-5">
+                        <label for="orderNumber" class="col-sm-2 col-form-label col-form-label-lg fs-1">
+                            number</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-control-lg border border-0 fs-1"
+                                id="OrderNumber" disabled="99985" placeholder="99985">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="history" class="col-sm-2 col-form-label col-form-label-lg fs-1">History</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-control-lg border border-0  fs-1" id="history"
+                                disabled=" 21 / February / 2021" placeholder="21 / February / 2021">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="name" class="col-sm-2 col-form-label col-form-label-lg fs-1">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-control-lg border border-0 fs-1 " id="name"
+                                disabled=" Ahmed Mohamed El Sayed" placeholder="Ahmed Mohamed El Sayed">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="genre" class="col-sm-2 col-form-label col-form-label-lg fs-1">Gender</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-control-lg border border-0 fs-1 " id="genre"
+                                disabled="Male" placeholder="Male">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="nationality"
+                            class="col-sm-2 col-form-label col-form-label-lg fs-1">Nationality</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-control-lg border border-0 fs-1"
+                                id="nationality" disabled="Egyption" placeholder="Egyption">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- End-Inquire -->
+    <!-- Start-Detail -->
+    <section>
+        <div class="liengruop">
+            <div class="container">
+                <h1 class="mb-5 ps-3 pb-5 mt-5 fs-1 fw-bold">Umrah details</h1>
+                <div class="col-12">
+                    <div class=" d-flex">
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="timeline-dotA">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <h3>Al-Ahram</h3>
+                                <div class="timeline-data ">
+                                    20/18 <br> 10:00 AM
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <h3>Circumnavigation</h3>
+                                <div class="timeline-data">
+                                    20/18 <br> 10:00 AM
+                                </div>
+                                <div class="timeline-contant">
+                                    <div class="video-wrapper">
+                                        <iframe autoplay="0" aria-controls="#carouselExampleDark"
+                                            src="assets/video/bss.mp4" allow="autoplay='0'" frameborder="0"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <h3>Sona Circumnavigation</h3>
+                                <div class="timeline-contant">
+                                    <div class="video-wrapper">
+                                        <iframe src="assets/video/bss.mp4" allow="autoplay='0'" frameborder="0"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <h3>quest</h3>
+                                <div class="timeline-contant">
+                                    <div class="video-wrapper">
+                                        <iframe src="assets/video/bss.mp4" allow="autoplay='0'" frameborder="0"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <h3>Decomposition of Haram</h3>
+                                <div class="timeline-contant">
+                                    <div class="video-wrapper">
+                                        <iframe src="assets/video/bss.mp4" allow="autoplay='0'" frameborder="0"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-dot bg-light">
+                                        <i class="fas fa-circle" style="color: #006870"></i>
+                                    </div>
+                                    <h3 class="fw-bold fs-1">Evaluation</h3>
+                                    <h4 class="fs-4">Please put your rating</h4>
+                                    <div class="timeline-contant">
+                                        <div class="container">
+                                            <div class="evaluation">
+                                                <h4 class="fs-3">Quality of Service</h4>
+                                                <div class="ratingA"> <input type="radio" name="ratingA" value="5"
+                                                        id="5"><label for="5"><i class="far fa-star"></i></label> <input
+                                                        type="radio" name="ratingA" value="4" id="4"><label for="4"><i
+                                                            class="far fa-star"></i></label> <input type="radio"
+                                                        name="ratingA" value="3" id="3"><label for="3"><i
+                                                            class="far fa-star"></i></label> <input type="radio"
+                                                        name="ratingA" value="2" id="2"><label for="2"><i
+                                                            class="far fa-star"></i></label>
+                                                    <input type="radio" name="ratingA" value="1" id="1"><label
+                                                        for="1"><i class="far fa-star"></i></label>
+                                                </div>
+                                                <hr>
+                                                <h4 class="fs-3">Difficulty of the <br> payment process</h4>
+                                                <div class="ratingB"> <input type="radio" name="ratingB" value="6"
+                                                        id="6"><label for="6"><i class="far fa-star"></i></label> <input
+                                                        type="radio" name="ratingB" value="7" id="7"><label for="7"><i
+                                                            class="far fa-star"></i></label> <input type="radio"
+                                                        name="ratingB" value="8" id="8"><label for="8"><i
+                                                            class="far fa-star"></i></label> <input type="radio"
+                                                        name="ratingB" value="9" id="9"><label for="9"><i
+                                                            class="far fa-star"></i></label>
+                                                    <input type="radio" name="ratingB" value="10" id="10"><label
+                                                        for="10"><i class="far fa-star"></i></label>
+                                                </div>
+                                                <hr>
+                                                <h4 class="fs-3">Easy access to the agent</h4>
+                                                <div class="ratingC">
+                                                    <input type="radio" name="ratingC" value="11" id="11">
+                                                    <label for="11">
+                                                        <i class="far fa-star"></i>
+                                                    </label>
+                                                    <input type="radio" name="ratingC" value="12" id="12">
+                                                    <label for="12"><i class="far fa-star"></i>
+                                                    </label>
+                                                    <input type="radio" name="ratingC" value="13" id="13">
+                                                    <label for="13">
+                                                        <i class="far fa-star">
+                                                        </i>
+                                                    </label>
+                                                    <input type="radio" name="ratingC" value="14" id="14">
+                                                    <label for="14">
+                                                        <i class="far fa-star">
+                                                        </i>
+                                                    </label>
+                                                    <input type="radio" name="ratingC" value="15" id="15">
+                                                    <label for="15">
+                                                        <i class="far fa-star"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="example" class="form-label"></label>
+                                                    <textarea class="form-control fw-bold fs-4" id="example"
+                                                        style="resize: none;" placeholder="Observations"
+                                                        rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <button class="px-md-5 rounded-pill buttons">Done</button>
+                                </div>
+                                <h3 style="transform: translate(-5px, 5px);">Completion</h3>
+                                <div class="timeline-dot-e">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="card-body d-flex justify-content-center align-content-center">
+                        <div class="py-5">
+                            <button class="rounded-pill">Download Deg</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End-Detail -->
+    <!-- Footer -->
+    <footer>
+        <div class="row row-col-sm-3 row-col-md-5 py-5">
+            <div class="col-sm-3 mt-3 d-flex flex-wrap justify-content-center align-content-start">
+                <img src="assets/icons/Group 10032.svg" alt="">
+            </div>
+            <div class="col-sm-3 mb-3 mt-5">
+                <!-- روابط سريعة -->
+                <h5>Quick links</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link  text-white">About adopt</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link  text-white">Contact us</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link  text-white">Frequently asked questions</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link  text-white">Privacy Policy</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link  text-white">Recording</a></li>
+                </ul>
+            </div>
+            <!-- التحميل -->
+            <div class="col-sm-3 mb-3 mt-5">
+                <h5>Download</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link  text-white">Performer application</a>
+                        <img src="assets/icons/Group 260.svg" alt="">
+                        <img src="assets/icons/Apple download button.svg" alt="">
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link  text-white">Client application</a>
+                        <img src="assets/icons/Group 260.svg" alt="">
+                        <img src="assets/icons/Apple download button.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <!-- التواصل -->
+            <div class="col-sm-2 mb-3 mt-5 ">
+                <h5>Communication</h5>
+                <ul class="nav social-icons">
+                    <li class="nav-item mb-2 ">
+                        <a href="#" class="nav-link  text-white">
+                            <img src="assets/icons/Vector.svg" alt="" class="px-1">
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2 "><a href="#" class="nav-link  text-white"> <img
+                                src="assets/icons/Vector (1).svg" alt="" class="px-1"><span>Instagram</span></a></li>
+                    <li class="nav-item mb-2 "><a href="#" class="nav-link  text-white"> <img
+                                src="assets/icons/Vector (2).svg" alt="" class="px-1"><span>Twitter</span></a></li>
+                    <li class="nav-item mb-2 "><a href="#" class="nav-link  text-white"> <img
+                                src="assets/icons/Group 260.png" alt="" class="px-1"><span>LinkedIn</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- copyrights -->
+        <div class="copyrights">
+            <div class="container">
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+        function toggleMenu() {
+            if (menuList.style.maxHeight === "0px") {
+                menuList.style.maxHeight = "300px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
